@@ -1,13 +1,16 @@
 import javax.swing.JOptionPane;
 
-public class Exercicio19 {
+public class Exercicio22 {
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero de vezes:"));
-        String frase = JOptionPane.showInputDialog("Digite a Frase:");
-        
-        for (int i = 0; i < n; i++){
-            JOptionPane.showMessageDialog(null, "frase: " + frase);
+        double media = 0.0;
+        double soma = 0.0;
+        int i = 0;
+        while (i <= 1000){
+            soma = soma + i;
+            i++;
         }
+        media = soma / 1000;
+        System.out.println("Media: " + media);
     }
 }
